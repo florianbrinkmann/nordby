@@ -1,6 +1,11 @@
 Changelog:
 ||||||||||||||
 
+1.1.0
+Added
+- RTL styles
+
+
 Version 1.0.5 — 30.05.2016
 ---
 - removed deprecated theme tags from style.css

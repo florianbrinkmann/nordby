@@ -1,0 +1,28 @@
+{
+	"name": "nordby",
+	"version": "1.1.0",
+	"description": "Nordby WordPress theme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/FlorianBrinkmann/nordby.git"
+	},
+	"scripts": {
+		"build:production": "webpack -p --env.production",
+		"build:dev": "webpack --watch",
+		"css:rtl": "css-flip assets/css/nordby.css > assets/css/nordby-rtl.css",
+		"minify-css": "find assets/css/ -iname '*.css' -and -not -iname '*.min.css' -exec sh -c 'node_modules/csso-cli/bin/csso {} --input-map auto --map inline --output ${0%.css}.min.css' {} \\;"
+	},
+	"author": "Florian Brinkmann",
+	"license": "GPLv2 or later",
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.0",
+		"css-flip": "^0.5.0",
+		"csso-cli": "^1.0.0",
+		"webpack": "^3.5.6"
+	},
+	"dependencies": {
+		"ally.js": "^1.4.1"
+	}
+}
