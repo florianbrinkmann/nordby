@@ -7,7 +7,7 @@
 		"url": "https://github.com/FlorianBrinkmann/nordby.git"
 	},
 	"scripts": {
-		"build:production": "webpack -p --env.production",
+		"build:production": "webpack -p --env.production && npm run css:rtl && npm run minify-css",
 		"build:dev": "webpack --watch",
 		"css:rtl": "css-flip assets/css/nordby.css > assets/css/nordby-rtl.css",
 		"minify-css": "find assets/css/ -iname '*.css' -and -not -iname '*.min.css' -exec sh -c 'node_modules/csso-cli/bin/csso {} --input-map auto --map inline --output ${0%.css}.min.css' {} \\;"

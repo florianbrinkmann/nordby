@@ -1,0 +1,35 @@
+@media screen and (min-width: 70em) {
+  .sidebar-button {
+    display: none;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+  }
+
+  .main {
+    float: right;
+    max-width: 800px;
+    width: 66.6666%;
+  }
+
+  .js .sidebar,
+  .no-js .sidebar {
+    float: left;
+    right: inherit;
+    margin-top: 3.2em;
+    max-width: 400px;
+    opacity: 1;
+    position: relative;
+    top: inherit;
+    transition: none;
+    visibility: visible;
+    width: 33.3333%;
+  }
+
+  .sidebar-content {
+    padding-right: 2.4em;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}

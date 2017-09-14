@@ -1,0 +1,21 @@
+language: php
+php:
+- '7.1'
+script:
+- 
+before_deploy:
+- npm install --silent
+- npm run build:production
+- mkdir -p nordby
+- rsync -rav --exclude-from='.rsync-exclude' --delete-excluded ./ nordby
+- zip -r nordby.zip nordby/
+- rm -rf nordby
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: KhAHAIyE5jGbH8O6Bdj6zPEK+W4ZxwjyYDfL2EfCiXnyuNTJnI//j5MMWVLA+En/b1ALtOIto3HuPpkYE7ObgEgMf0mwBCrSjEjXSA8PnQfWBNBHsqCSDa3YK7cXI9XGsf8vbz6Oh2Xulwj2zx03JISAW88f2r0QM2a+2OtWcQfCLeif0Onuzvy7ApIpp+GEf6onJBniE3bZ6qM0gawayQY9gaX7JY64xnZwgBq8Tm+qwumlPHX4+o6+baihi11xuL8A8EUP3qlBq0hedYNpkiT7KvWrQxixldLEigccGEU+clDxmzE5NFTUadiqw6u+Kiyadl3kLxjkxUOTrXyIjW4lOyEr8TrgOqpznAhnp/oR1wkhO0Oi0UafFzgmtq+1GbGK3bRRBmRdG1dd3N+vzwEwZ6oyavzFO7hl/YP4E+vtXhc+1IXMdHoCeg4kzRyvgaLLSXU/TKXDtZOaXUwjVd7ZIEV5sSkbwrfxeqKma6fC5XURRGT8S3Rsu43RFrERGNxYmXiAeE1VgmanjQvM5d0Zrxr4J9KJEgV1egzgPdfQXf821b8wsVn+S5I+EMwrzVbF1gg83HYxkbUep9UpIK10e5u9KaMb03jwuj1dUsUGX/JkhO26FVEr/K+RzhS5N9zn/HJ5cVhBh2yhy66BU5lDWWWJ6zspLJ+wsrnhRzU=
+  file: nordby.zip
+  on:
+    repo: florianbrinkmann/nordby
+    tags: true

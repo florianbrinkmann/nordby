@@ -1,0 +1,10 @@
+- .git/
+- node_modules/
+- nordby/
+- scripts/
+- assets/css/scss
+- package.json
+- package-lock.json
+- webpack.config.js
+- nordby.zip
+- .*
