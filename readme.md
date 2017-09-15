@@ -3,13 +3,13 @@
 **Contributors:** Florian Brinkmann  
 **Requires at least:** WordPress 4.7  
 **Tested up to:** WordPress 4.8.1  
-**Version:** 1.1.0  
+**Version:** 1.1.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
 ## Description
 
-The Nordby theme is a fully responsive theme with a off canvas sidebar. The post formats are highlighted with different background colors. In the customizer you can change things like the design color, background-image for the header text and so on.
+This child theme from Fanoe displays the sidebar permanently in larger viewports.
 
 ## Copyright
 
@@ -37,6 +37,11 @@ License: MIT License
 Source: https://github.com/necolas/normalize.css 
 
 ## Changelog
+
+### 1.1.1 – 15.09.2017
+
+#### Changed
+* On smaller viewports where the sidebar is hidden by default, the user can hide the opened sidebar via clicking elsewhere.
 
 ### 1.1.0 – 14.09.2017
 
