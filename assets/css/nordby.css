@@ -16,10 +16,12 @@
 	.js .sidebar,
 	.no-js .sidebar {
 		float: right;
+		height: auto;
 		left: inherit;
 		margin-top: 3.2em;
 		max-width: 400px;
 		opacity: 1;
+		overflow: visible;
 		position: relative;
 		top: inherit;
 		transition: none;

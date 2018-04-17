@@ -2,8 +2,8 @@
 
 **Contributors:** Florian Brinkmann  
 **Requires at least:** WordPress 4.7  
-**Tested up to:** WordPress 4.8.1  
-**Version:** 1.1.2  
+**Tested up to:** WordPress 4.9.5  
+**Version:** 1.1.3  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -37,6 +37,16 @@ License: MIT License
 Source: https://github.com/necolas/normalize.css 
 
 ## Changelog
+
+### 1.1.3 – 17.04.2018
+
+#### Changed
+
+* Bumped tested version of Fanoe to 2.0.6.
+
+#### Fixed
+
+* Fix for compatibility with Fanoe 2.0.6.
 
 ### 1.1.2 – 19.09.2017
 
