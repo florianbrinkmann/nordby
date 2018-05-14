@@ -38,6 +38,12 @@ Source: https://github.com/necolas/normalize.css
 
 ## Changelog
 
+### 1.1.4 – 14.05.2018
+
+#### Changed
+
+* Bumped tested version of Fanoe to 2.0.7.
+
 ### 1.1.3 – 17.04.2018
 
 #### Changed
